@@ -26,7 +26,7 @@
 		<script src="js/Background_Animation.js" type="text/javascript"></script>		
 		<!-- Форма "Испоняемый файл"-->
 		<script type="text/javascript" src="js/init.js"></script>
-		<!-- Форма "Авторизация"-->
+		<!-- Форма "Авторизация" git-->   
 		<script type="text/javascript" src="js/Authorization.js"></script>
 		<!-- Форма "Регистрация"-->
 		<script type="text/javascript" src="js/Registration.js"></script>
