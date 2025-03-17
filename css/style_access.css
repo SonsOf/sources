@@ -1,0 +1,282 @@
+body{  
+    font: normal 13px helvetica,arial,verdana,sans-serif !important;
+}
+.eye-open::before {
+    content: '\f06e'; /* Код иконки "открытый глаз" из Font Awesome */
+    font-family: 'FontAwesome'; /* Используйте шрифт с иконками, например, Font Awesome */
+    color: #000;
+}
+
+.eye-closed::before {
+    content: '\f070'; /* Код иконки "закрытый глаз" из Font Awesome */
+    font-family: 'FontAwesome'; /* Используйте шрифт с иконками, например, Font Awesome */
+    color: #000;
+}
+
+#bubbles { 
+    background:#000000;
+    width:100%;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    }
+
+    .x-css-shadow{
+        box-shadow: #4B8FCA 0px 0px 10px !important;
+    }
+
+    
+
+
+
+
+    .cards {
+        display: flex;
+        flex-wrap: wrap; 
+        justify-content: center;
+        background: url(../images/pic.png);
+        background-size: cover;
+        background-position: center;
+        margin: 20px 0;  
+        padding: 20px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.2), 0 16px 20px rgba(0,0,0,0.2);
+    }
+    .cards:hover .card:after {
+        opacity: 1;
+    }
+    .cards .card {
+        background-color: #4fb0ce;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        width: calc(50% - 20px);
+        margin: 10px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.2), 0 16px 20px rgba(0,0,0,0.2);
+        opacity: 0.95;
+    }
+    @media screen and (max-width: 767px) {
+        .cards .card {
+            width: calc(50% - 20px);
+        }
+    }
+    @media screen and (max-width: 520px) {
+        .cards .card {
+            width: calc(100% - 20px);
+        }
+    }
+    .cards .card:hover:before {
+        opacity: 1;
+    }
+    .cards .card:before,
+    .cards .card:after {
+        border-radius: inherit;
+        content: "";
+        height: 100%;
+        left: 0px;
+        opacity: 0;
+        position: absolute;
+        top: 0px;
+        transition: opacity 500ms;
+        width: 100%;
+    }
+    .cards .card:before {
+        background: radial-gradient(600px circle at var(--mouse-x) var(--mouse-y), rgba(191, 226, 255, 0.4), transparent 40%);
+        z-index: 3;
+    }
+    .cards .card:after {  
+        background: radial-gradient(500px circle at var(--mouse-x) var(--mouse-y), rgba(191, 226, 255, 0.9), transparent 40%);
+        z-index: 1;
+    }
+    .cards .card .card-content {
+        background-color: #337AB7;
+        border-radius: inherit;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+        padding: 78px 16px 16px;
+        z-index: 2;
+        height: 100%;
+        line-height: 1.2;
+        margin: 3px;
+    }
+    .cards .card .card-image {
+        position: absolute;
+        top: 12px;
+        left: 50%;
+        transform: translateX(-50%);    
+        z-index: 10;
+    }
+    .cards .card .card-image i {
+        font-size: 64px;
+        color: #16354f;
+    }
+    .cards .card .card-image img {
+        height: 64px;
+    }
+    .cards .card .card-image svg {
+        height: 64px;
+        fill: #16354f;
+    }
+    .cards .card .card-title {
+        font-size: 18px;
+        font-family: 'Roboto', sans-serif;
+        padding: 10px 0;
+        color: #BFE2FF;
+        text-transform: uppercase;
+        font-weight: 600;
+            text-shadow:
+                -1px -1px 0 black,
+                 1px -1px 0 black,
+                -1px  1px 0 black,
+                 1px  1px 0 black;
+    }
+
+    
+    .cards .card .card-text,
+    .cards .card .card-text p {
+        font-size: 15px;
+        font-family: Verdana, sans-serif;
+        color: #FFF;
+        margin: 0;
+    }
+    .cards .card .card-text p:not(:last-child) {
+        margin-bottom: 10px;
+    }  
+
+/*Заголовок*/
+    .section {
+        text-align: center;
+        font-size: 22px;
+        font-family: 'Roboto', sans-serif;
+        color: #000;
+    }        
+    .section-white {
+        background-color: rgb(7, 7, 7);
+        background-image: url("data:image/svg+xml,%3C?xml version='1.0' encoding='utf-8'?%3E %3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 675 134' style='enable-background:new 0 0 675 134;' xml:space='preserve'%3E %3Cstyle type='text/css'%3E .s%7Bfill:%23337AB7;%7D %3C/style%3E %3Cg%3E %3Cg%3E %3Cpolygon class='s' points='63.3,54.7 63.3,42.5 52.8,36.4 42.2,42.5 42.2,54.7 52.8,60.8 '/%3E %3Cpolygon class='s' points='31.7,36.3 31.7,24.1 21.1,18 10.6,24.1 10.6,36.3 21.1,42.4 '/%3E %3Cpolygon class='s' points='84.4,18.3 84.4,6.1 73.9,0 63.3,6.1 63.3,18.3 73.9,24.4 '/%3E %3Cpolygon class='s' points='147.7,18.3 147.7,6.1 137.1,0 126.6,6.1 126.6,18.3 137.1,24.4 '/%3E %3Cpolygon class='s' points='232.1,18.3 232.1,6.1 221.5,0 211,6.1 211,18.3 221.5,24.4 '/%3E %3Cpolygon class='s' points='284.8,36.3 284.8,24.1 274.2,18 263.7,24.1 263.7,36.3 274.2,42.4 '/%3E %3Cpolygon class='s' points='379.7,18.3 379.7,6.1 369.2,0 358.6,6.1 358.6,18.3 369.2,24.4 '/%3E %3Cpolygon class='s' points='506.3,18.3 506.3,6.1 495.7,0 485.2,6.1 485.2,18.3 495.7,24.4 '/%3E %3Cpolygon class='s' points='675,18.3 675,6.1 664.5,0 653.9,6.1 653.9,18.3 664.5,24.4 '/%3E %3Cpolygon class='s' points='643.4,36.3 643.4,24.1 632.8,18 622.3,24.1 622.3,36.3 632.8,42.4 '/%3E %3Cpolygon class='s' points='559,36.3 559,24.1 548.4,18 537.9,24.1 537.9,36.3 548.4,42.4 '/%3E %3Cpolygon class='s' points='147.7,54.7 158.2,60.8 168.8,54.7 168.8,42.5 158.2,36.4 147.7,42.5 '/%3E %3Cpolygon class='s' points='232.1,54.7 232.1,42.5 221.5,36.4 211,42.5 211,54.7 221.5,60.8 '/%3E %3Cpolygon class='s' points='316.4,54.7 316.4,42.5 305.9,36.4 295.3,42.5 295.3,54.6 284.8,60.6 284.8,72.8 295.3,78.9 305.9,72.8 305.9,60.8 '/%3E %3Cpolygon class='s' points='358.6,54.7 358.6,42.5 348.1,36.4 337.5,42.5 337.5,54.7 348.1,60.8 '/%3E %3Cpolygon class='s' points='411.3,36.4 400.8,42.5 400.8,54.7 411.3,60.8 421.9,54.7 421.9,42.5 421.9,42.4 432.4,36.3 432.4,24.1 421.9,18 411.3,24.1 411.3,36.3 '/%3E %3Cpolygon class='s' points='506.3,54.7 516.8,60.8 527.4,54.7 527.4,42.5 516.8,36.4 506.3,42.5 '/%3E %3Cpolygon class='s' points='675,54.7 675,42.5 664.5,36.4 653.9,42.5 653.9,54.7 664.5,60.8 '/%3E %3Cpath class='s' d='M664.5,133.7l-10.5-6.1v-12.2l10.5-6.1V97.2l10.5-6.1V78.8l-10.5-6.1L654,78.8V91l0,0l-10.5,6.1v12.2l0,0 l-10.5,6.1l0,0l-10.5-6.1l0,0V97.1L611.7,91V78.8l-10.5-6.1l0,0v-12l10.5-6.1V42.4l-10.5-6.1l-10.5,6.1v12.1l-10.5,6.1v12.2l0,0 l-10.5,6.1V91l10.5,6.1l10.5-6.1l10.5,6.1v12.2l0,0l-10.5,6.1v12.2l0,0l-10.5,6.1l0,0l-10.5-6.1v-12.2l-10.5-6.1V97.2l-10.5-6.1 l-10.5,6.1l0,0l-10.5-6.1l0,0V78.9l-10.5-6.1l-10.5,6.1v12.2l0,0l-10.5,6.1v12.2l0,0l-10.5,6.1l0,0l-10.5-6.1l-10.5,6.1v12.2l0,0 l-10.5,6.1l0,0l-10.5-6.1l0,0v-12.2l10.6-6.1V97.2L443,91.1l-10.5,6.1l0,0L422,91.1l0,0V78.9l-10.5-6.1L401,78.9v12.2l10.5,6.1 l0,0v12.2l0,0l-10.5,6.1v12.2l-10.5,6.1l0,0l-10.5-6.1l0,0v-12.2l0,0l10.5-6.1V97.2L380,91.1V78.9l0,0l10.5-6.1V60.6L380,54.5 l-10.5,6.1v12.2l0,0L359,78.9v12.2l10.5,6.1l0,0v12.2l0,0l-10.5,6.1l0,0l-10.5-6.1l0,0V97.2L338,91.1V78.9l-11-6.1l-10.5,6.1v12.2 l10.5,6.1l0,0v12.2l-10.5,6.1v12.2l-10.5,6.1l0,0l-10.5-6.1l0,0v-12.2l10.5-6.1V97.2l-10.5-6.1L285,97.2v12.2l0,0l-10.5,6.1l0,0 l-10.5-6.1l-10.5,6.1l0,0l-10.5-6.1l0,0V97.2l-10.5-6.1l0,0V78.9L222,72.8l-11,6.1v12.2l-10.5,6.1v12.2l10.5,6.1l0,0v12.2 l-10.5,6.1l0,0l-10.5-6.1v-12.2l-10.5-6.1l0,0V97.2L169,91.1V78.9l-10.5-6.1L148,78.9v12.2l10.5,6.1v12.2l0,0l-10.5,6.1v12.2l0,0 l-10.5,6.1l0,0l-10.5-6.1v-12l10.5-6.1V97.4L127,91.3l-11,6.1l0,0l-10.5-6.1V79.1L94.9,73l-10.5,6.1v12.2l10.5,6.1v12.2l10.5,6.1 v12l0,0l-10.5,6.1l0,0l-10.5-6.1v-12.2l-10.5-6.1l-10.5,6.1l0,0l-10.5-6.1v-12l10.5-6.1V79.1L52.8,73l-10.5,6.1v12.2l-10.5,6.1v12 l-10.5,6.1v12.2l0,0l-10.5,6.1l0,0L0,127.6v6.4h675v-6.4L664.5,133.7z M527.4,127.6l-10.5,6.1l-10.5-6.1v-12.2l10.5-6.1l10.5,6.1 V127.6z'/%3E %3Cpolygon class='s' points='10.6,60.6 10.6,72.8 21.1,78.9 31.7,72.8 31.7,60.6 21.1,54.6 '/%3E %3Cpolygon class='s' points='116,72.8 126.6,78.9 137.1,72.8 137.1,60.6 126.6,54.6 126.6,42.5 116,36.4 105.5,42.5 105.5,54.7 116,60.8 '/%3E %3Cpolygon class='s' points='200.4,72.8 200.4,60.6 189.9,54.6 179.3,60.6 179.3,72.8 189.9,78.9 '/%3E %3Cpolygon class='s' points='253.1,78.9 253.1,91.1 263.7,97.2 274.2,91.1 274.2,78.9 263.7,72.8 263.7,72.8 263.7,60.6 253.1,54.6 242.6,60.6 242.6,72.8 '/%3E %3Cpolygon class='s' points='453.5,72.8 453.5,60.6 443,54.6 432.4,60.6 432.4,72.8 443,78.9 '/%3E %3Cpolygon class='s' points='537.9,60.6 537.9,72.8 548.4,78.9 559,72.8 559,60.6 548.4,54.6 '/%3E %3Cpolygon class='s' points='643.4,72.8 643.4,60.6 632.8,54.6 622.3,60.6 622.3,72.8 632.8,78.9 '/%3E %3Cpolygon class='s' points='485.2,54.6 485.2,54.6 485.2,42.5 474.6,36.4 464.1,42.5 464.1,54.7 474.6,60.8 474.6,60.8 474.6,72.7 474.6,72.7 464.1,78.8 464.1,91 474.6,97.1 485.2,91 485.2,78.9 485.2,78.9 495.7,72.8 495.7,60.6 '/%3E %3C/g%3E %3C/g%3E %3C/svg%3E ");
+        background-size: auto 40px;
+        background-repeat: repeat-x;
+        background-position: center bottom;
+        padding-top: 40px;
+        padding-bottom: 70px;
+    }
+    .section-color {
+        background-color: #ed9200;
+        background-image: url("data:image/svg+xml,%3C?xml version='1.0' encoding='utf-8'?%3E %3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 675 134' style='enable-background:new 0 0 675 134;' xml:space='preserve'%3E %3Cstyle type='text/css'%3E .s%7Bfill:%231f2833;%7D %3C/style%3E %3Cg%3E %3Cg%3E %3Cpolygon class='s' points='63.3,54.7 63.3,42.5 52.8,36.4 42.2,42.5 42.2,54.7 52.8,60.8 '/%3E %3Cpolygon class='s' points='31.7,36.3 31.7,24.1 21.1,18 10.6,24.1 10.6,36.3 21.1,42.4 '/%3E %3Cpolygon class='s' points='84.4,18.3 84.4,6.1 73.9,0 63.3,6.1 63.3,18.3 73.9,24.4 '/%3E %3Cpolygon class='s' points='147.7,18.3 147.7,6.1 137.1,0 126.6,6.1 126.6,18.3 137.1,24.4 '/%3E %3Cpolygon class='s' points='232.1,18.3 232.1,6.1 221.5,0 211,6.1 211,18.3 221.5,24.4 '/%3E %3Cpolygon class='s' points='284.8,36.3 284.8,24.1 274.2,18 263.7,24.1 263.7,36.3 274.2,42.4 '/%3E %3Cpolygon class='s' points='379.7,18.3 379.7,6.1 369.2,0 358.6,6.1 358.6,18.3 369.2,24.4 '/%3E %3Cpolygon class='s' points='506.3,18.3 506.3,6.1 495.7,0 485.2,6.1 485.2,18.3 495.7,24.4 '/%3E %3Cpolygon class='s' points='675,18.3 675,6.1 664.5,0 653.9,6.1 653.9,18.3 664.5,24.4 '/%3E %3Cpolygon class='s' points='643.4,36.3 643.4,24.1 632.8,18 622.3,24.1 622.3,36.3 632.8,42.4 '/%3E %3Cpolygon class='s' points='559,36.3 559,24.1 548.4,18 537.9,24.1 537.9,36.3 548.4,42.4 '/%3E %3Cpolygon class='s' points='147.7,54.7 158.2,60.8 168.8,54.7 168.8,42.5 158.2,36.4 147.7,42.5 '/%3E %3Cpolygon class='s' points='232.1,54.7 232.1,42.5 221.5,36.4 211,42.5 211,54.7 221.5,60.8 '/%3E %3Cpolygon class='s' points='316.4,54.7 316.4,42.5 305.9,36.4 295.3,42.5 295.3,54.6 284.8,60.6 284.8,72.8 295.3,78.9 305.9,72.8 305.9,60.8 '/%3E %3Cpolygon class='s' points='358.6,54.7 358.6,42.5 348.1,36.4 337.5,42.5 337.5,54.7 348.1,60.8 '/%3E %3Cpolygon class='s' points='411.3,36.4 400.8,42.5 400.8,54.7 411.3,60.8 421.9,54.7 421.9,42.5 421.9,42.4 432.4,36.3 432.4,24.1 421.9,18 411.3,24.1 411.3,36.3 '/%3E %3Cpolygon class='s' points='506.3,54.7 516.8,60.8 527.4,54.7 527.4,42.5 516.8,36.4 506.3,42.5 '/%3E %3Cpolygon class='s' points='675,54.7 675,42.5 664.5,36.4 653.9,42.5 653.9,54.7 664.5,60.8 '/%3E %3Cpath class='s' d='M664.5,133.7l-10.5-6.1v-12.2l10.5-6.1V97.2l10.5-6.1V78.8l-10.5-6.1L654,78.8V91l0,0l-10.5,6.1v12.2l0,0 l-10.5,6.1l0,0l-10.5-6.1l0,0V97.1L611.7,91V78.8l-10.5-6.1l0,0v-12l10.5-6.1V42.4l-10.5-6.1l-10.5,6.1v12.1l-10.5,6.1v12.2l0,0 l-10.5,6.1V91l10.5,6.1l10.5-6.1l10.5,6.1v12.2l0,0l-10.5,6.1v12.2l0,0l-10.5,6.1l0,0l-10.5-6.1v-12.2l-10.5-6.1V97.2l-10.5-6.1 l-10.5,6.1l0,0l-10.5-6.1l0,0V78.9l-10.5-6.1l-10.5,6.1v12.2l0,0l-10.5,6.1v12.2l0,0l-10.5,6.1l0,0l-10.5-6.1l-10.5,6.1v12.2l0,0 l-10.5,6.1l0,0l-10.5-6.1l0,0v-12.2l10.6-6.1V97.2L443,91.1l-10.5,6.1l0,0L422,91.1l0,0V78.9l-10.5-6.1L401,78.9v12.2l10.5,6.1 l0,0v12.2l0,0l-10.5,6.1v12.2l-10.5,6.1l0,0l-10.5-6.1l0,0v-12.2l0,0l10.5-6.1V97.2L380,91.1V78.9l0,0l10.5-6.1V60.6L380,54.5 l-10.5,6.1v12.2l0,0L359,78.9v12.2l10.5,6.1l0,0v12.2l0,0l-10.5,6.1l0,0l-10.5-6.1l0,0V97.2L338,91.1V78.9l-11-6.1l-10.5,6.1v12.2 l10.5,6.1l0,0v12.2l-10.5,6.1v12.2l-10.5,6.1l0,0l-10.5-6.1l0,0v-12.2l10.5-6.1V97.2l-10.5-6.1L285,97.2v12.2l0,0l-10.5,6.1l0,0 l-10.5-6.1l-10.5,6.1l0,0l-10.5-6.1l0,0V97.2l-10.5-6.1l0,0V78.9L222,72.8l-11,6.1v12.2l-10.5,6.1v12.2l10.5,6.1l0,0v12.2 l-10.5,6.1l0,0l-10.5-6.1v-12.2l-10.5-6.1l0,0V97.2L169,91.1V78.9l-10.5-6.1L148,78.9v12.2l10.5,6.1v12.2l0,0l-10.5,6.1v12.2l0,0 l-10.5,6.1l0,0l-10.5-6.1v-12l10.5-6.1V97.4L127,91.3l-11,6.1l0,0l-10.5-6.1V79.1L94.9,73l-10.5,6.1v12.2l10.5,6.1v12.2l10.5,6.1 v12l0,0l-10.5,6.1l0,0l-10.5-6.1v-12.2l-10.5-6.1l-10.5,6.1l0,0l-10.5-6.1v-12l10.5-6.1V79.1L52.8,73l-10.5,6.1v12.2l-10.5,6.1v12 l-10.5,6.1v12.2l0,0l-10.5,6.1l0,0L0,127.6v6.4h675v-6.4L664.5,133.7z M527.4,127.6l-10.5,6.1l-10.5-6.1v-12.2l10.5-6.1l10.5,6.1 V127.6z'/%3E %3Cpolygon class='s' points='10.6,60.6 10.6,72.8 21.1,78.9 31.7,72.8 31.7,60.6 21.1,54.6 '/%3E %3Cpolygon class='s' points='116,72.8 126.6,78.9 137.1,72.8 137.1,60.6 126.6,54.6 126.6,42.5 116,36.4 105.5,42.5 105.5,54.7 116,60.8 '/%3E %3Cpolygon class='s' points='200.4,72.8 200.4,60.6 189.9,54.6 179.3,60.6 179.3,72.8 189.9,78.9 '/%3E %3Cpolygon class='s' points='253.1,78.9 253.1,91.1 263.7,97.2 274.2,91.1 274.2,78.9 263.7,72.8 263.7,72.8 263.7,60.6 253.1,54.6 242.6,60.6 242.6,72.8 '/%3E %3Cpolygon class='s' points='453.5,72.8 453.5,60.6 443,54.6 432.4,60.6 432.4,72.8 443,78.9 '/%3E %3Cpolygon class='s' points='537.9,60.6 537.9,72.8 548.4,78.9 559,72.8 559,60.6 548.4,54.6 '/%3E %3Cpolygon class='s' points='643.4,72.8 643.4,60.6 632.8,54.6 622.3,60.6 622.3,72.8 632.8,78.9 '/%3E %3Cpolygon class='s' points='485.2,54.6 485.2,54.6 485.2,42.5 474.6,36.4 464.1,42.5 464.1,54.7 474.6,60.8 474.6,60.8 474.6,72.7 474.6,72.7 464.1,78.8 464.1,91 474.6,97.1 485.2,91 485.2,78.9 485.2,78.9 495.7,72.8 495.7,60.6 '/%3E %3C/g%3E %3C/g%3E %3C/svg%3E ");
+        background-size: auto 40px;
+        background-repeat: repeat-x;
+        background-position: center bottom;
+        /*padding-top: 40px;*/
+        padding-bottom: 50px;
+        color: #FFF;
+    }
+
+    /* смена стиля*/ 
+
+    .radio-form {
+        display: flex;
+        justify-content: center;
+        margin: 20px 0;
+    }
+    .radio-form .radio-control {
+        width: 160px;
+        height: 160px;
+        transition: all ease 250ms;
+    }
+    .radio-form .radio-control input {
+        display: none;
+    }
+    .radio-form .radio-control .radio-input {
+        background: transparent;
+        text-align: center;
+        padding: 10px;
+        padding-top: 20px;
+        border-radius: 10px;
+        cursor: pointer;
+        margin: 0 10px;
+        position: relative;
+        transition: all ease 250ms;
+        border: 4px solid #ecbe74; 
+        display: block;
+    }
+    .radio-form .radio-control:hover .radio-input {
+        box-shadow: 0 2px 5px rgba(255, 253, 253, 0.5), 0 6px 10px rgba(253, 253, 253, 0.5);
+    }
+    .radio-form .radio-control .radio-input i {
+        display: block;
+        font-size: 70px;
+        color: #ed9200;
+        font-weight: bold;  
+    }
+    .radio-form .radio-control .radio-input img {
+        width: 70px; 
+    }
+    .radio-form .radio-control .radio-input span {
+        font-family: Tahoma, sans-serif;
+        letter-spacing: 1px;
+        font-size: 18px;
+        font-weight: bold;
+        text-transform: uppercase;
+        display: block;
+        /*margin-top: 16px;*/
+        color: #AAA;
+    }
+    .radio-form .radio-control input:checked + .radio-input span {
+        color: #ed9200;
+        opacity: 1;
+        transition: opacity ease 250ms;
+    }
+    .radio-form .radio-control input:checked + .radio-input:after {
+        top: 0;
+        right: 20px;
+        transform: translateY(-50%);
+        animation-name: animation;
+        animation-duration: 250ms;
+         font-size: 25px;
+        display: block;
+        position: absolute;
+        border: 5px solid #232d38;
+        background: #232d38;
+        padding-left: 2px;
+        content: "\2713";
+        font-family: "FontAwesome";
+        font-weight: bold;
+    }
+    .radio-form .radio-control input:checked + .radio-input {
+        border: 4px solid #ed9200;
+    }
+    .radio-form .radio-control input:checked + .radio-input:after,
+    .radio-form .radio-control input:checked + .radio-input i {
+        color: #ed9200;
+    }
+    @keyframes animation {
+        0% {
+            transform: translateY(-50%) scale(0);
+        }
+        75% {
+            transform: translateY(-50%) scale(1.3);
+        }
+        100% {
+            transform: translateY(-50%) scale(1);
+        }
+    }
+    @media screen and (max-width: 768px) {
+        .radio-form {
+            display: block;
+        }
+        .radio-form .radio-control {
+            width: 100%;
+            margin-bottom: 30px;
+        }
+    }
+
+
+    
+
+  /*tabpanel*/
+  .x-tab-bar-default {
+    background-color: transparent;
+  }

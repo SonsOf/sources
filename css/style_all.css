@@ -1,0 +1,227 @@
+.icon_Entrusted_By_Me {
+    background-image: url(../images/126373.png) !important;
+    width:150px!important;
+    height:150px!important;
+    background-size: contain;
+    margin-right: auto !important;
+    margin-left: auto !important;
+}
+
+.icon_Entrusted_To_Me {
+    background-image: url(../images/126316.png) !important;
+    width:150px!important;
+    height:150px!important;
+    background-size: contain;
+    margin-right: auto !important;
+    margin-left: auto !important;
+}
+
+.icon_Profile {
+    background-image: url(../images/208983.png) !important;
+    width:150px!important;
+    height:150px!important;
+    background-size: contain;
+    margin-right: auto !important;
+    margin-left: auto !important;
+}
+
+.icon_Profile1 {
+    background-image: url(../images/208983.png) !important;
+    width:100%!important;
+    height:100%!important;
+    background-size: contain;
+    margin-right: auto !important;
+    margin-left: auto !important;
+}
+
+.icon_Reports {
+    background-image: url(../images/4388159.png) !important;
+    width:150px!important;
+    height:150px!important;
+    background-size: contain;
+    margin-right: auto !important;
+    margin-left: auto !important;
+}
+
+.icon_Calendar {
+    background-image: url(../images/4100250.png) !important;
+    width:100%!important;
+    height:100%!important;
+    background-size: contain;
+    margin-right: auto !important;
+    margin-left: auto !important;
+}
+
+.icon_Working_With_Tasks {
+    background-image: url(../images/2163163.png) !important;
+    width:100%!important;
+    height:100%!important;
+    background-size: contain;
+    margin-right: auto !important;
+    margin-left: auto !important;
+}
+
+.icon_Execution_Of_Tasks {
+    background-image: url(../images/8324496.png) !important;
+    width:100%!important;
+    height:50%!important;
+    background-size: contain;
+    margin-right: auto !important;
+    margin-left: auto !important;
+}
+
+.icon_Workload_of_Employees {
+    background-image: url(../images/209045.png) !important;
+    width:100%!important;
+    height:50%!important;
+    background-size: contain;
+    margin-right: auto !important;
+    margin-left: auto !important;
+}
+
+.icon_Working_With_Projects {
+    background-image: url(../images/2163163.png) !important;
+    width:100%!important;
+    height:50%!important;
+    background-size: contain;
+    margin-right: auto !important;
+    margin-left: auto !important;
+}
+
+.icon_Find {
+    background-image: url(../images/159651.png) !important;
+    width:100%!important;
+    height:100%!important;
+    background-size: contain;
+    margin-right: auto !important;
+    margin-left: auto !important;
+}
+
+.icon_Exit {
+    background-image: url(../images/15340104.png) !important;
+    width:100%!important;
+    height:100%!important;
+    background-size: contain;
+    margin-right: auto !important;
+    margin-left: auto !important;
+}
+
+.icon_Changing_User_Rights{
+    background-image: url(../images/4838536.png) !important;
+    width:100%!important;
+    height:70%!important;
+    background-size: contain;
+    margin-right: auto !important;
+    margin-left: auto !important;
+}
+
+.button_Content_Menu 
+{
+    position: absolute;
+    bottom: 4px  !important;
+    left: 0%  !important;
+    text-align: center !important;
+    width: 190px !important;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    padding: 10px 0;
+    color: #BFE2FF;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    text-shadow:
+        -1px -1px 0 black,
+        1px -1px 0 black,
+        -1px  1px 0 black,
+        1px  1px 0 black;
+}
+
+.button_Content_Menu1 
+{
+    position: absolute;
+    bottom: 15px  !important;
+    left: 110px  !important;
+    text-align: center !important;
+    width: 200px !important;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    padding: 10px;
+    color: #BFE2FF;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    text-shadow:
+        -1px -1px 0 black,
+        1px -1px 0 black,
+        -1px  1px 0 black,
+        1px  1px 0 black;
+}
+
+.button_Content_Exit 
+{
+    position: absolute;
+    bottom: 15px  !important;
+    left: 110px  !important;
+    text-align: center !important;
+    width: 200px !important;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    padding: 10px;
+    color: #BFE2FF;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    text-shadow:
+        -1px -1px 0 black,
+        1px -1px 0 black,
+        -1px  1px 0 black,
+        1px  1px 0 black;
+}
+
+.button_Content
+{
+    position: absolute;
+    bottom: 4px  !important;
+    left: 0%  !important;
+    text-align: center !important;
+    width: 130px !important;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    padding: 10px 0;
+    color: #BFE2FF;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    text-shadow:
+        -1px -1px 0 black,
+        1px -1px 0 black,
+        -1px  1px 0 black,
+        1px  1px 0 black;
+}
+
+.button_Style_Menu {
+    background-color: #4fb0ce;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: calc(50% - 20px);
+    margin: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2), 0 16px 20px rgba(0,0,0,0.2);
+    opacity: 0.95;
+}
+
+.button_Style {
+    background-color: #4fb0ce;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2), 0 16px 20px rgba(0,0,0,0.2);
+    opacity: 0.95;
+}
+
+.upload-icon
+{
+    background: url('/ext4/ext4/examples/shared/icons/fam/image_add.png') no-repeat 0 0 !important;
+}
